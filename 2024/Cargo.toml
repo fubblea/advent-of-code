@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+cargo-features = ["script"]
+
+members = ["day-*"]
+default-members = ["day-*"]
+
+[workspace.dependencies]
+divan = "0.1.16"
+miette = { version = "7.4", features = ["fancy"] }
+test-log = "0.2.16"
+rstest = "0.23.0"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.18", features = ["fmt", "env-filter"] }
